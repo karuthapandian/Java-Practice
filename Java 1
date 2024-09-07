@@ -1,0 +1,132 @@
+practise questions:
+1.get input for variable name and age
+print it
+sample input 
+Thangam
+20
+Sample output
+My name is Thangam
+My age is 20
+
+Source code:
+import java.util.Scanner;
+class Namebasedproblem
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the name");
+        String a=sc.nextLine();
+        System.out.println("My name is" + a);
+        System.out.println("Enter the age");
+        int b= sc.nextInt();
+        System.out.println("My age is"+b);
+        sc.close();
+    }
+}
+============================================================
+2.get input for variable name ,age,address
+print it
+
+source code:
+import java.util.Scanner;
+class Namebasedproblem
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the name");
+        String a=sc.nextLine();
+        System.out.println("My name is" + a);
+        System.out.println("Enter the age");
+        int b= sc.nextInt();
+        System.out.println("My age is"+b);
+        sc.nextLine();
+        System.out.println("Enter the address");
+        String c= sc.nextLine();
+        System.out.println("My address is"+c);
+        sc.close();
+    }
+}
+===============================================
+3.get input for 3 integer variable a,b,c .Now multiply all variables and store it in d.Now add all variables and store it in e.Now divide d by e.
+
+source code:
+import java.util.Scanner;
+class Namebasedproblem
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        //int a = sc.nextInt();
+        System.out.println("Enter a");
+        int a = sc.nextInt();
+        //int b= sc.nextInt();
+        System.out.println("Enter b");
+         int b= sc.nextInt();
+        //int c=sc.nextInt();
+        System.out.println("Enter c");
+        int c=sc.nextInt();
+        int d=a*b*c;
+        System.out.println(d);
+        int e=a+b+c;
+        System.out.println(e);
+        int f= d/e;
+        
+        System.out.println(f);
+        sc.close();
+    }
+}
+
+================================================================
+4.get input for 3 variables,name,score and department.let the user enter the score for 100marks you convert it for 10 and print it.
+Source code:
+import java.util.Scanner;
+class Namebasedproblem
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter name");
+        String a = sc.nextLine();
+        System.out.println("Enter score");
+        int b = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter department");
+        String c = sc.nextLine();
+        System.out.println("Name: " + a);
+        System.out.println("Score: " + b);
+        double scores = b / 10.0;
+        System.out.println("Score by 10: " + scores);
+        System.out.println("Department: " + c);
+
+        sc.close();
+    }
+}
+=======================================================
+5.Write a Java program to divide two numbers and print them on the screen.
+Source code:
+import java.util.Scanner;
+
+class Hello {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a");
+        int a = sc.nextInt();
+
+        System.out.println("Enter b");
+        int b = sc.nextInt();
+
+        // Check if b is not zero
+        if (b != 0) {
+            int c = a / b;
+            System.out.println("The result is " + c);
+        } else {
+            System.out.println("Error: Division by zero is not allowed.");
+        }
+
+        sc.close();
+    }
+}
+=============================================
