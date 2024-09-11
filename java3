@@ -1,0 +1,114 @@
+5.Check whether the given number is palindrome or not
+Source code:
+import java.util.Scanner;
+class palindrome
+{
+    public static void main(String[]args)
+    {
+        int reverse,digit =0,oldno;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Palindrome Number:");
+        int a=sc.nextInt();
+        oldno =a;
+        while(a!=0)
+        {
+           reverse = a%10;
+          digit =(digit*10) + reverse;
+          a=a/10;
+        }
+          if(digit==oldno)
+          {
+              System.out.println("Palindrome");
+          }
+          else
+          {
+              System.out.println("Not a palindrome");
+          }
+           
+            
+            
+        
+        sc.close();
+        
+    }
+}
+==================
+6.Fibbonaci Series
+Source code:
+import java.util.Scanner;
+class fibbonaci
+{
+    public static void main(String[]args)
+    {
+        int first =0,second=1,next;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the fibbonaci numbers:");
+        int n=sc.nextInt();
+       System.out.println("Fibbonaci Series is \n" + first +"\n"+second);
+       for(int i=2;i<=n;i++)
+       {
+           next = first+second;
+            System.out.println(next);
+           first = second;
+           second = next;
+       }
+      
+        sc.close();
+        
+    }
+}
+======================
+7.Factorial
+Source code:
+import java.util.Scanner;
+
+class Factorial {
+   
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n = sc.nextInt();
+        int result = factorial(n);
+        System.out.println("Factorial of " + n + " is: " + result);
+    }
+}
+====================================
+8.Bubble sort
+Source code:
+import java.util.Scanner;
+
+class BubbleSort {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of elements:");
+        int n = sc.nextInt();  
+        int arr[] = new int[n];
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {  
+                if (arr[j] > arr[j + 1]) 
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println("Sorted array:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+======================================================
