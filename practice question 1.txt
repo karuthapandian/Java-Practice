@@ -1,0 +1,238 @@
+to check whether 2 numbers aare equal or not 
+class demo
+{
+    public static void main(String[]args)
+    {
+         int num1=40;
+         int num2=50;
+        if(num1==num2)
+        {
+            System.out.println("Equal");
+        }
+        else{
+            System.out.println("not equal");
+        }
+    }
+}
+======================
+getting input from user 
+import java.util.Scanner;
+class demo
+{
+    public static void main(String[]args)
+    {
+         System.out.println("Enter the first number:");
+         Scanner sc = new Scanner(System.in);
+         int a = sc.nextInt();
+         
+         System.out.println("Enter the second number");
+         int b = sc.nextInt();
+         
+         if(a==b)
+        {
+            System.out.println("Equal");
+        }
+        else{
+            System.out.println("not equal");
+        }
+    }
+}
+========================
+3.compare the string
+import java.util.Scanner;
+class demo
+{
+    public static void main(String[]args)
+    {
+         String RCB ="loose";
+         
+         
+         
+         
+         if(RCB.equals(RCB))
+        {
+            System.out.println("Ee sala cup namdhey");
+        }
+        else{
+            System.out.println("cup ila");
+        }
+    }
+}
+=======================
+getting user from input
+
+import java.util.Scanner;
+class demo
+{
+    public static void main(String[]args)
+    {
+        Scanner sc =new Scanner(System.in);
+       System.out.println("Enter Whether RCB wins or loose");
+         String RCB =sc.nextLine();
+         
+         
+         
+         
+         if(RCB.equals("win"))
+        {
+            System.out.println("Ee sala cup namdhey");
+        }
+        else{
+            System.out.println("cup ila");
+        }
+    }
+}
+=========================
+another eg for comparing the string from getting input from the user
+
+import java.util.Scanner;
+class demo
+{
+    public static void main(String[]args)
+    {
+        Scanner sc =new Scanner(System.in);
+       System.out.println("Enter Whether Meghana dead or not");
+         String Meghana =sc.nextLine();
+         
+         
+         
+         
+         if(Meghana.equals("dead"))
+        {
+            System.out.println("Surya meets Ramya");
+        }
+        else{
+            System.out.println("Surya weds Meghana");
+        }
+    }
+}
+========================
+Get a input for variable mark ,if mark > 35 print pass else print fail
+
+Source code
+import java.util.Scanner;
+class marks
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Enter the Marks:");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a>35)
+        {
+            System.out.println("Pass");
+        }
+        else
+        {
+            System.out.println("Fail");
+        }
+    }
+}
+================
+get input for variable income,if income is greater than 7000 scholoarship is available else not
+
+import java.util.Scanner;
+class marks
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Enter the Income:");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a>7000)
+        {
+            System.out.println("Eligible for Scholarship");
+        }
+        else
+        {
+            System.out.println("Not eligible for Scholarship");
+        }
+    }
+}
+===========
+get input for a number and check whether it is divisble by both 3 and 5 or not .if yes then print the number is divisble by 3 and 5 else, print the number is n
+not divisble ny 3 and 5
+Source code:
+import java.util.Scanner;
+class marks
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Enter the first number:");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+       
+        
+        if(a % 3 == 0)
+        {
+            System.out.println("Divisible by 3");
+        }
+        else if(a % 5 == 0)
+        {
+            System.out.println("Divisible by 5");
+        
+        }
+        else{
+            System.out.println("Not divisible by 3 and 5 ");
+        }
+    }
+}
+==========================
+LOGICAL OPERATOR
+
+Hungry +icecream = eat
+Hungry && icecream = eat
+class demo
+{
+    public static void main(String []args)
+    {
+        boolean Hungry = true;
+        boolean Icecream = false;
+        if(Hungry && Icecream )
+        {
+            System.out.println("Eat");
+            
+        }
+        else
+        {
+            System.out.println("Don't eat");
+        }
+    }
+}
+==================
+cricket or football = play
+cricket || football = play
+
+source code:
+class demo
+{
+    public static void main(String []args)
+    {
+        boolean football = true;
+        boolean cricket = false;
+        if(football || cricket )
+        {
+            System.out.println("play");
+            
+        }
+        else
+        {
+            System.out.println("Don't play");
+        }
+    }
+}
+======================
+Else if and nested if
+class Demo {
+    public static void main(String[] args) {
+        int score = 0;
+        if (score > 60) {
+            System.out.println("Iphone");
+        } else if (score > 35) {
+            System.out.println("Pass");
+        } else {
+            System.out.println("Mac Book");
+        }
+    }
+}
+================================
